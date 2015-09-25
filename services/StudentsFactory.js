@@ -4,7 +4,7 @@ studentSignIn.factory('StudentsFactory', function StudentsFactory() {
   factory.addStudent = function() {
     factory.students.push({ name: factory.studentName,
                           id: factory.students.length + 1,
-                          signedIn = true });
+                          signedIn = false });
     factory.studentName = null;
   };
 
