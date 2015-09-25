@@ -2,7 +2,7 @@
 
 ##### Code Review 09/25/2015
 
-#### By Nathan Young and Nathan Young
+#### By Nathan Young
 
 ## Description
 
