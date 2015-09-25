@@ -1,0 +1,29 @@
+<h4 ng-show="students.length">Student List</h4>
+
+
+
+<h4 ng-show="!students.length">There are no students</h4>
+
+
+
+
+
+
+
+<!--
+<div class="col-md-6" ng-show="studentsWithoutPermission.length">
+     <h3>Without Permission Slips</h3>
+     <ul>
+       <li ng-repeat="item in studentsWithoutPermission = (students | filter:{permissionSlip: false})">
+         {{item.name}} <a ng-click="addStudentWithPermissionSlip(item)"> - received permission slip -</a>
+       </li>
+     </ul>
+   </div>
+   <div class="col-md-6" ng-show="studentsWithPermission.length">
+     <h3>With Permission Slips</h3>
+     <ul>
+       <li ng-repeat="item in studentsWithPermission = (students | filter:{permissionSlip: true})">
+         {{item.name}}
+       </li>
+     </ul>
+   </div> -->
