@@ -1,32 +1,29 @@
 <h4 ng-show="!students.length">There are no students</h4>
-<h4 ng-show="students.length">Students who are not here:</h4>
 
-<li ng-repeat="item in studentsSignedOut = (students | filter:{signedIn: false})">
-    {{ item.name }} <a ng-click-"signStudentIn(item)">sign me in</a>
-</li>
+<h4 ng-show="students.length">Students:</h4>
 
-
-
-
-
-
-
+<ul>
+    <li ng-repeat="item in students">
+        {{ item.name }}
+        <a ng-click="signStudentIn(item)">sign me in</a>
+        <a ng-click="signStudentOut(item)">sign me out</a>
+  </li>
+</ul>
 
 
-<!--
-<div class="col-md-6" ng-show="studentsWithoutPermission.length">
-     <h3>Without Permission Slips</h3>
-     <ul>
-       <li ng-repeat="item in studentsWithoutPermission = (students | filter:{permissionSlip: false})">
-         {{item.name}} <a ng-click="addStudentWithPermissionSlip(item)"> - received permission slip -</a>
-       </li>
-     </ul>
-   </div>
-   <div class="col-md-6" ng-show="studentsWithPermission.length">
-     <h3>With Permission Slips</h3>
-     <ul>
-       <li ng-repeat="item in studentsWithPermission = (students | filter:{permissionSlip: true})">
-         {{item.name}}
-       </li>
-     </ul>
-   </div> -->
+
+<!-- <h4 ng-show="students.length">Students who are not here:</h4>
+
+<ul>
+    <li ng-repeat="item in studentsSignedOut = (students | filter:{signedIn: false})">
+        {{ item.name }} <a ng-click="signStudentIn(item)">sign me in</a>
+  </li>
+</ul>
+
+<h4 ng-show="students.length">Students who are here:</h4>
+
+<ul>
+    <li ng-repeat="item in studentsSignedIn = (students | filter:{signedIn: true})">
+        {{ item.name }} <a ng-click="signStudentOut(item)">sign me out</a>
+  </li>
+</ul> -->

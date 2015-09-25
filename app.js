@@ -15,6 +15,12 @@ studentSignIn.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider.state('signin', {
         url: "/signin",
         templateUrl: "partials/signin.html",
+        controller: 'StatusCtrl'
+    });
+
+    $stateProvider.state('status', {
+        url: "/status",
+        templateUrl: "partials/status.html",
         controller: 'StudentsCtrl'
     });
 

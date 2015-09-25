@@ -1,0 +1,15 @@
+<h4 ng-show="students.length">Students who are not here:</h4>
+
+<ul>
+    <li ng-repeat="item in studentsSignedOut = (students | filter:{signedIn: false})">
+        {{ item.name }}
+  </li>
+</ul>
+
+<h4 ng-show="students.length">Students who are here:</h4>
+
+<ul>
+    <li ng-repeat="item in studentsSignedIn = (students | filter:{signedIn: true})">
+        {{ item.name }}
+  </li>
+</ul>
