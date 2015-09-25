@@ -1,8 +1,11 @@
-<h4 ng-show="students.length">Student List</h4>
-
-
-
 <h4 ng-show="!students.length">There are no students</h4>
+<h4 ng-show="students.length">Students who are not here:</h4>
+
+<li ng-repeat="item in studentsSignedOut = (students | filter:{signedIn: false})">
+    {{ item.name }} <a ng-click-"signStudentIn(item)">sign me in</a>
+</li>
+
+
 
 
 
