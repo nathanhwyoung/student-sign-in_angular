@@ -1,3 +1,8 @@
+<h5><a ui-sref="students">add students</a></h5>
+<h5><a ui-sref="signin">sign in & out</a></h5>
+<h5><a ui-sref="status">who's here</a></h5>
+
+
 <h4>Submit new student</h4>
 <form ng-submit="StudentsFactory.addStudent()" class="form-inline" role="form">
     <div class="form-group">
@@ -10,10 +15,7 @@
     <h4>List of Students:</h4>
     <ul>
         <li ng-repeat="item in students">
-            <!-- <a ui-sref="topics.questions({ topicId: item.id })">{{ item.name }}</a> -->
             {{ item.name }}
         </li>
     </ul>
 </div>
-
-<!-- <div ui-view> </div> -->
